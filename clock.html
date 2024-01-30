@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Clock
+        </title>
+    </head>
+    <script>
+        function time()
+        {
+            var h=new Date().getHours()
+            var m=new Date().getMinutes()
+            var s=new Date().getSeconds()
+
+            if (h<10)
+                h="0"+h;
+            if (m<10)
+                m="0"+m;
+            if (s<10)
+                s="0"+s;
+            if (h>12){
+                h=h-12;
+                if (h<10)
+                    h="0"+h;}
+
+            var h2=new Date().getHours()
+
+
+            if (h2>12)
+                document.getElementById("con").innerHTML=h+":"+m+":"+s + " PM";
+            else
+                document.getElementById("con").innerHTML=h+":"+m+":"+s + " AM";
+            refresh()
+        }
+
+        function refresh()
+        {
+            var ref=1000;
+            myt=setTimeout("time()", ref)
+        }
+    </script>
+    <body onload="refresh()">
+        <div id="con"></div>
+    </body>
+</html>

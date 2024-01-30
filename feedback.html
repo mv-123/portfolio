@@ -1,0 +1,64 @@
+<html>
+   <head>
+        <title> Feedback Form </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="Images/favicon.png">
+    </head>
+    <script>
+        function time()
+        {
+            var h=new Date().getHours()
+            var m=new Date().getMinutes()
+            var s=new Date().getSeconds()
+
+            if (h<10)
+                h="0"+h;
+            if (m<10)
+                m="0"+m;
+            if (s<10)
+                s="0"+s;
+
+            document.getElementById("con").innerHTML=h+":"+m+":"+s;
+            refresh()
+        }
+
+        function refresh()
+        {
+            var ref=1000;
+            myt=setTimeout("time()", ref)
+        }
+    </script>
+    <body onload="refresh()">
+        <header>
+            <div id="logo" class="inline-block">
+                <a href="index.html"> <img src="Images/logo.jpeg" style="height: 50px; width: auto; box-shadow: 12px 12px 12px rgb(203, 181, 160);"> </a>
+                <h5 class="inline-block"> Book Blog </h5>
+            </div>
+            <div id="con" style="float: right;"></div>
+            <nav> 
+                <a href="index.html"> Home </a>
+                <a href="classic_genre.html"> Classic </a>
+                <a href="sci-fi_genre.html"> Sci-Fi </a>
+                <a href="mystery_genre.html"> Mystery </a>
+                <a href="book_table.html"> Book Details </a>
+                <a href="reviews.html"> Reviews </a>
+                <a href="feedback.html"> Feedback Form </a>
+            </nav>
+        </header>
+        
+        <form id="f1" method="post" action="mailto:moksha.vaidya.952@k12.friscoisd.org">
+            <label for="fname"> First Name </label>
+            <input type="text" name="fname" id="fn"> <br> <br>
+            <label for="lname"> Last Name </label>
+            <input type="text" name="lname" id="ln"> <br> <br>
+            <label for="gender"> Gender </label> <br>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Prefer Not To Say"> Prefer Not To Say <br> <br>
+            <label for="comments"> Comments </label> <br>
+            <textarea rows="7" cols="50"> </textarea> <br> <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+

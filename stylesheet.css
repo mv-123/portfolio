@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(231, 208, 186);
+    margin: 20px;
+}
+p{
+    text-align: justify; 
+    font-size: 120%; 
+    line-height: 150%;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    margin-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.Image{
+    height: 1000px;
+    width: 40%;
+    float: left;
+    border: 1px solid burlywood;
+    margin: 20px;
+}
+.Image img{
+    margin: 50px;
+    padding: 50px;
+    height: 700px;
+    width: 500px;
+    border: 4px dashed peachpuff;
+    border-radius: 10%;
+}
+.Image p{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2, h3, h5, tr, input, body, button{
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    width: 30%;
+    height: 30%;
+    border: rgb(255, 241, 219) 2px solid;
+    box-shadow: 4px 4px 2px rgb(241, 206, 173);
+    float: right;
+}
+.row{
+    margin: 100px;
+}
+table, th, td{
+    border: 2px solid black;
+}
+table{
+    margin: 50px;
+    width: 70%;
+    margin-top: 200px;
+    margin-left: 200px;
+
+}
+caption{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+td{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+video{
+    width: 95%;
+    height: 190px;
+    border: 5px dotted rgb(241, 206, 173);
+    border-radius: 10%;
+    margin: 12px 2px auto;
+}
+iframe{
+    width: 95%;
+    height: 400px;
+    border: 5px dotted rgb(241, 206, 173);
+    margin: 12px 2px auto;
+}
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    float: top;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+header{
+    box-shadow: 12px 12px 12px rgb(203, 181, 160);
+    background-color: rgb(217, 191, 167);
+    margin: 40px;
+}
+nav a{
+    padding: 20px 20px;
+    text-decoration: none;
+    color: black;
+}
+.inline-block{
+    display: inline-block;
+}
+#logo img{
+    margin: 10px 10px;
+    float: left;
+}
+#logo h5{
+    float: right;
+    margin-top: 30px;
+    font-size: 20px;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+ul, li{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: larger;
+}

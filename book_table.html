@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title> Book Details </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="Images/favicon.png">
+    </head>
+    <script>
+        function time()
+        {
+            var h=new Date().getHours()
+            var m=new Date().getMinutes()
+            var s=new Date().getSeconds()
+
+            if (h<10)
+                h="0"+h;
+            if (m<10)
+                m="0"+m;
+            if (s<10)
+                s="0"+s;
+
+            document.getElementById("con").innerHTML=h+":"+m+":"+s;
+            refresh()
+        }
+
+        function refresh()
+        {
+            var ref=1000;
+            myt=setTimeout("time()", ref)
+        }
+    </script>
+    <body onload="refresh()">
+        <header>
+            <div id="logo" class="inline-block">
+                <a href="index.html"> <img src="Images/logo.jpeg" style="height: 50px; width: auto;"> </a>
+                <h5 class="inline-block"> Book Blog </h5>
+            </div>
+            <div id="con" style="float: right;"></div>
+            <nav> 
+                <a href="index.html"> Home </a>
+                <a href="classic_genre.html"> Classic </a>
+                <a href="sci-fi_genre.html"> Sci-Fi </a>
+                <a href="mystery_genre.html"> Mystery </a>
+                <a href="book_table.html"> Book Details </a>
+                <a href="reviews.html"> Reviews </a>
+                <a href="feedback.html"> Feedback Form </a>
+            </nav>
+        </header>
+        
+        <h1> Book Tables </h1>
+        <h3 style="text-align: center;"> Prices from Google Books & Amazon </h2>
+        <table>
+            <caption> Book Details: Classic </caption>
+            <tr>
+                <th rowspan="2"> Book Name </th>
+                <th rowspan="2"> Book Author </th>
+                <th rowspan="2"> Page Count </th>
+                <th rowspan="2"> Year of Publishing </th>
+                <th colspan="2"> Price </th>
+            </tr>
+            <tr>
+                <th> Hardcover </th>
+                <th> Kindle Edition </th>
+            </tr>
+            <tr>
+                <td> Little House in the Big Woods </td>
+                <td> Laura Ingalls Wilder </td>
+                <td> 256 </td>
+                <td> 1932 </td>
+                <td> $6.99 </td>
+                <td> $6.99 </td>
+            </tr>
+            <tr>
+                <td> Little House on the Prarie </td>
+                <td> Laura Ingalls Wilder </td>
+                <td> 352 </td>
+                <td> 1935 </td>
+                <td> $8.99 </td>
+                <td> $8.99 </td>
+            </tr>
+            <tr>
+                <td> Charlotte's Web </td>
+                <td> E.B. White </td>
+                <td> 384 </td>
+                <td> 1952 </td>
+                <td> $6.39 </td>
+                <td> $7.99 </td>
+            </tr>
+            <tr>
+                <td> Farmer Boy </td>
+                <td> Laura Ingalls Wilder </td>
+                <td> 384 </td>
+                <td> 1933 </td>
+                <td> $7.99 </td>
+                <td> $6.99 </td>
+            </tr>
+            <tr>
+                <td> Stuart Little </td>
+                <td> E.B. White </td>
+                <td> 144 </td>
+                <td> 1945 </td>
+                <td> $6.99 </td>
+                <td> $9.99 </td>
+            </tr>
+        </table>
+        <table>
+            <caption> Book Details: Sci-Fi </caption>
+            <tr>
+                <th rowspan="2"> Book Name </th>
+                <th rowspan="2"> Book Author </th>
+                <th rowspan="2"> Page Count </th>
+                <th rowspan="2"> Year of Publishing </th>
+                <th colspan="2"> Price </th>
+            </tr>
+            <tr>
+                <th> Hardcover </th>
+                <th> Kindle Edition </th>
+            </tr>
+            <tr>
+                <td> Dry </td>
+                <td> Neal Shusterman </td>
+                <td> 390 </td>
+                <td> 2018 </td>
+                <td> $10.39 </td>
+                <td> $9.99 </td>
+            </tr>
+            <tr>
+                <td> Scythe </td>
+                <td> Neal Shusterman </td>
+                <td> 448 </td>
+                <td> 2016 </td>
+                <td> $14.34 </td>
+                <td> $10.99 </td>
+            </tr>
+            <tr>
+                <td> A Wrinkle In Time </td>
+                <td> Madeleine L'engle </td>
+                <td> 216 </td>
+                <td> 1962 </td>
+                <td> $6.99 </td>
+                <td> $7.99 </td>
+            </tr>
+            <tr>
+                <td> The Hunger Games </td>
+                <td> Suzanne Collins </td>
+                <td> 464 </td>
+                <td> 2008 </td>
+                <td> $12.79 </td>
+                <td> $5.95 </td>
+            </tr>
+        </table>
+        <table>
+            <caption> Book Details: Mystery </caption>
+            <tr>
+                <th rowspan="2"> Book Name </th>
+                <th rowspan="2"> Book Author </th>
+                <th rowspan="2"> Page Count </th>
+                <th rowspan="2"> Year of Publishing </th>
+                <th colspan="2"> Price </th>
+            </tr>
+            <tr>
+                <th> Hardcover </th>
+                <th> Kindle Edition </th>
+            </tr>
+            <tr>
+                <td> Nemesis </td>
+                <td> Brendan Reichs </td>
+                <td> 464 </td>
+                <td> 2017 </td>
+                <td> $12.99 </td>
+                <td> $7.99 </td>
+            </tr>
+            <tr>
+                <td> One of Us is Lying </td>
+                <td> Karen M. McManus </td>
+                <td> 368 </td>
+                <td> 2017 </td>
+                <td> $9.74 </td>
+                <td> $8.99 </td>
+            </tr>
+            <tr>
+                <td> Small Spaces </td>
+                <td> Katherine Arden </td>
+                <td> 256 </td>
+                <td> 2018 </td>
+                <td> $8.99 </td>
+                <td> $8.99 </td>
+            </tr>
+            <tr>
+                <td> Sweet </td>
+                <td> Emmy Laybourne </td>
+                <td> 288 </td>
+                <td> 2015 </td>
+                <td> $12.99 </td>
+                <td> $9.99 </td>
+            </tr>
+        </table>
+    </body>
+</html>

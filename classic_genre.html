@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title> Classic Genre </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="Images/favicon.png">
+    </head>
+    <script>
+        function time()
+        {
+            var h=new Date().getHours()
+            var m=new Date().getMinutes()
+            var s=new Date().getSeconds()
+
+            if (h<10)
+                h="0"+h;
+            if (m<10)
+                m="0"+m;
+            if (s<10)
+                s="0"+s;
+
+            document.getElementById("con").innerHTML=h+":"+m+":"+s;
+            refresh()
+        }
+
+        function refresh()
+        {
+            var ref=1000;
+            myt=setTimeout("time()", ref)
+        }
+    </script>
+    <body onload="refresh()">
+        <header>
+            <div id="logo" class="inline-block">
+                <a href="index.html"> <img src="Images/logo.jpeg" style="height: 50px; width: auto;"> </a>
+                <h5 class="inline-block"> Book Blog </h5>
+            </div>
+            <div id="con" style="float: right;"></div>
+            <nav> 
+                <a href="index.html"> Home </a>
+                <a href="classic_genre.html"> Classic </a>
+                <a href="sci-fi_genre.html"> Sci-Fi </a>
+                <a href="mystery_genre.html"> Mystery </a>
+                <a href="book_table.html"> Book Details </a>
+                <a href="reviews.html"> Reviews </a>
+                <a href="feedback.html"> Feedback Form </a>
+            </nav>
+        </header>
+        
+        <h1> Classic Genre </h1>
+        <p> A classic is a book that is well-written and has cultural importance. 
+            Classics can be prose works, such as novels or short stories, or non-fiction genres, such as histories, biographies, or religious texts. 
+            Classics can be appreciated for their construction and literary art. 
+            They should be of high artistic quality, at least for the time in which they were written. 
+            Classics can reflect a time period, a societal standard, or may offer commentary on a subject. </p>
+            <h3> Some of my preferred classic books are shown below. Click on the book cover to purchase. </h3>
+    <div class="row"> 
+        <div class="Image">
+            <a href="https://www.amazon.com/Little-House-Big-Woods-No/dp/0064400018"> 
+                <img src="Images/little_house_in_the_big_woods.jpg"> 
+            </a>
+            <p> Little House in the Big Woods </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/Little-House-Prairie-No/dp/0064400026">
+                <img src="Images/little_house_on_the_prarie.jpeg">
+            </a>
+            
+            <p> Little House on the Prarie </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/Charlottes-Web-B-White/dp/0061124958">
+                <img src="Images/charlottes_web.jpeg">
+            </a>
+            <p> Charlotte's Web </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/Farmer-Little-House-Ingalls-Wilder/dp/0064400034">
+               <img src="Images/farmer_boy.jpg"> 
+            </a>
+            <p> Farmer Boy </p>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+   <head>
+        <title> Book Blog </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="Images/favicon.png">
+    </head>
+    <script>
+        function time()
+        {
+            var h=new Date().getHours()
+            var m=new Date().getMinutes()
+            var s=new Date().getSeconds()
+
+            if (h<10)
+                h="0"+h;
+            if (m<10)
+                m="0"+m;
+            if (s<10)
+                s="0"+s;
+
+            document.getElementById("con").innerHTML=h+":"+m+":"+s;
+            refresh()
+        }
+
+        function refresh()
+        {
+            var ref=1000;
+            myt=setTimeout("time()", ref)
+        }
+    </script>
+    <body onload="refresh()">
+        <header>
+            <div id="logo" class="inline-block">
+                <a href="index.html"> <img src="Images/logo.jpeg" style="height: 50px; width: auto; box-shadow: 12px 12px 12px rgb(203, 181, 160);"> </a>
+                <h5 class="inline-block"> Book Blog </h5>
+            </div>
+            <div id="con" style="float: right;"></div>
+            <nav> 
+                <a href="index.html"> Home </a>
+                <a href="classic_genre.html"> Classic </a>
+                <a href="sci-fi_genre.html"> Sci-Fi </a>
+                <a href="mystery_genre.html"> Mystery </a>
+                <a href="book_table.html"> Book Details </a>
+                <a href="reviews.html"> Reviews </a>
+                <a href="feedback.html"> Feedback Form </a>
+            </nav>
+        </header>
+        
+        <h1 style="font-family: 'Courier New', Courier, monospace; text-align: center;"> Reader's Blog </h1>
+        <h3 style="text-align: center;"> “You are never alone when you are lost in the magic of a book.” — Marie Lu </h3>
+        <p> This is my blog about my favorite books. 
+            You will find the summary of my favorite books on this page.
+            If you happen to like these books, there are attached links where you can purchase the books. </p>
+        <!-- <img src="https://img.freepik.com/free-photo/book-composition-with-open-book_23-2147690555.jpg"> -->
+        <p style="text-align: center;"> ︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾ </p>
+        <img src="Images/books2.avif" style="width: auto; height: 300px; float: left; margin-right: 20px;">
+        <img src="Images/books.webp" style="width: auto; height: 300px; float: right; margin-left: 20px;">
+        
+        <ul> There are many different types of genres, including: </ul>
+            <li> Mystery </li>
+            <li> Thriller </li>
+            <li> Romance </li>
+            <li> Horror </li>
+            <li> Suspense </li>
+            <li> Science Fiction (Sci-Fi) </li>
+            <li> Fiction </li>
+            <li> Classic </li>
+            <li> Non-Fiction </li>
+            <li> Historical Fiction </li>
+            <li> Biography </li>
+            <li> Auto-Biography </li>
+    </body> 
+</html>

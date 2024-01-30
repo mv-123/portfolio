@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> Sci-Fi Genre </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="Images/favicon.png">
+    </head>
+    <script>
+        function time()
+        {
+            var h=new Date().getHours()
+            var m=new Date().getMinutes()
+            var s=new Date().getSeconds()
+
+            if (h<10)
+                h="0"+h;
+            if (m<10)
+                m="0"+m;
+            if (s<10)
+                s="0"+s;
+
+            document.getElementById("con").innerHTML=h+":"+m+":"+s;
+            refresh()
+        }
+
+        function refresh()
+        {
+            var ref=1000;
+            myt=setTimeout("time()", ref)
+        }
+    </script>
+    <body onload="refresh()">
+        <header>
+            <div id="logo" class="inline-block">
+                <a href="index.html"> <img src="Images/logo.jpeg" style="height: 50px; width: auto; box-shadow: 12px 12px 12px rgb(203, 181, 160);"> </a>
+                <h5 class="inline-block"> Book Blog </h5>
+            </div>
+            <div id="con" style="float: right;"></div>
+            <nav> 
+                <a href="index.html"> Home </a>
+                <a href="classic_genre.html"> Classic </a>
+                <a href="sci-fi_genre.html"> Sci-Fi </a>
+                <a href="mystery_genre.html"> Mystery </a>
+                <a href="book_table.html"> Book Details </a>
+                <a href="reviews.html"> Reviews </a>
+                <a href="feedback.html"> Feedback Form </a>
+            </nav>
+        </header>
+        
+        <h1> Sci-Fi Genre </h1>
+        <p> Usually futuristic, science fiction speculates about alternative ways of life made possible by technological change, and hence has sometimes been called "speculative fiction." 
+            Like fantasy, and often associated with it, science fiction envisions alternative worlds with believably consistent rules and structures, set apart somehow from the ordinary or familiar world of our time and place. 
+            Distinct from fantasy, however, science fiction reflects on technology to consider how it might transform the conditions of our existence and change what it means to be human. </p>
+        <h3> Some of my preferred sci-fi books are shown below. Click on the book cover to purchase. </h3>
+    <div class="row"> 
+        <div class="Image">
+            <a href="https://www.amazon.com/Dry-Neal-Shusterman/dp/1481481967">
+                <img src="Images/dry.jpeg">
+            </a>
+            <p> Dry </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/Scythe-Arc-Neal-Shusterman/dp/1442472421">
+                <img src="Images/scythe.jpeg">
+            </a>
+            <p> Scythe </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/Wrinkle-Time-Quintet/dp/0312367546">
+                <img src="Images/a_wrinkle_in_time.jpg">
+            </a>
+            <p> A Wrinkle In Time </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/Hunger-Games-Book/dp/0439023483">
+               <img src="Images/the_hunger_games.jpeg"> 
+            </a>
+            <p> The Hunger Games </p>
+        </div>
+    </div>
+    </body>
+</html>

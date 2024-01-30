@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title> Mystery Genre </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" href="Images/favicon.png">
+    </head>
+    <script>
+        function time()
+        {
+            var h=new Date().getHours()
+            var m=new Date().getMinutes()
+            var s=new Date().getSeconds()
+
+            if (h<10)
+                h="0"+h;
+            if (m<10)
+                m="0"+m;
+            if (s<10)
+                s="0"+s;
+
+            document.getElementById("con").innerHTML=h+":"+m+":"+s;
+            refresh()
+        }
+
+        function refresh()
+        {
+            var ref=1000;
+            myt=setTimeout("time()", ref)
+        }
+    </script>
+    <body onload="refresh()">
+        <header>
+            <div id="logo" class="inline-block">
+                <a href="index.html"> <img src="Images/logo.jpeg" style="height: 50px; width: auto; box-shadow: 12px 12px 12px rgb(203, 181, 160);"> </a>
+                <h5 class="inline-block"> Book Blog </h5>
+            </div>
+            <div id="con" style="float: right;"></div>
+            <nav> 
+                <a href="index.html"> Home </a>
+                <a href="classic_genre.html"> Classic </a>
+                <a href="sci-fi_genre.html"> Sci-Fi </a>
+                <a href="mystery_genre.html"> Mystery </a>
+                <a href="book_table.html"> Book Details </a>
+                <a href="reviews.html"> Reviews </a>
+                <a href="feedback.html"> Feedback Form </a>
+            </nav>
+        </header>
+        
+        <h1> Mystery Genre </h1>
+        <p>The mystery genre is a type of fiction that follows a crime from the moment it is committed to the moment it is solved. 
+            The genre is also known as detective or crime novels. 
+            Mystery novels are often called “whodunnits” because they turn the reader into a detective trying to figure out the who, what, when, and how of a particular crime. 
+            Mystery writers drop clues throughout the plot to invite readers to join in the investigation. 
+            The hero of a mystery novel is usually a cop, private eye, or amateur sleuth with a strong sense of justice who faces a clever villain. 
+            Mystery novels are filled with clues and red herrings that keep readers guessing until the very end. 
+            When readers finally put all the pieces together, they feel a sense of accomplishment. </p>
+            <h3> Some of my preferred mystery books are shown below. Click on the book cover to purchase. </h3>
+    <div class="row"> 
+        <div class="Image">
+            <a href="https://www.amazon.com/Nemesis-Project-Brendan-Reichs/dp/0399544941">
+                <img src="Images/nemesis.jpg">
+            </a>
+            <p> Nemesis </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/One-Lying-Karen-McManus-author/dp/1524764728/">
+                <img src="Images/one_of_us_is_lying.jpg">
+            </a>
+            <p> One Of Us Is Lying </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/Small-Spaces-Katherine-Arden/dp/0525515046/">
+               <img src="Images/small_spaces.jpg"> 
+            </a>
+            <p> Small Spaces </p>
+        </div>
+        <div class="Image">
+            <a href="https://www.amazon.com/Sweet-Emmy-Laybourne/dp/1250055199">
+                <img src="Images/sweet.jpeg">
+            </a>
+            <p> Sweet </p>
+        </div>
+    </div>
+    </body>
+</html>

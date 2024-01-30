@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Login Form
+        </title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <h1> Login </h1>
+        <h2 style="text-align: center;"> Username = Password </h2>
+        <div class="form" style="margin-top: 200px; margin-left: 570px"> 
+           <p id="para1"></p>
+            <label for="name"> Name </label>
+            <input type="text" id="name" name="name"> <br> <br>
+            <label for="pass"> Password </label>
+            <input type="password" id="pass" name="pass"> <br> <br>
+            <button onclick="check()"> Sign In </button> <br> <br>
+            <p id="result"></p> 
+        </div>
+        <script> 
+        var n1=0;
+        var p=0;
+        var result=0;
+        function check()
+        {
+            n1=document.getElementById('name').value;
+            p=document.getElementById('pass').value;
+            if (n1==p)
+            {
+                alert("Login Successful");
+                window.open("index.html");
+            }
+            else
+            {
+                alert("Login Unsuccessful");
+            }
+        }
+        </script>
+    </body>
+</html>
